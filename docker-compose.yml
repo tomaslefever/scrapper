@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  scrapper:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+    ports:
+      - "2222:22"
+    tty: true
